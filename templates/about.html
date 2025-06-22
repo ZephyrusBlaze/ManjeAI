@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ManjeAI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bounce {
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-16px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-green-100 to-yellow-50 min-h-screen">
+    <nav class="flex justify-between items-center px-4 py-3 bg-white shadow-md">
+        <div class="text-2xl font-extrabold text-green-700">🧠 ManjeAI</div>
+        <div class="space-x-4">
+            <a href="/" class="text-green-700 font-semibold">Home</a>
+            <a href="/history" class="text-green-700 font-semibold">History</a>
+            <a href="/about" class="text-green-700 font-semibold">About</a>
+        </div>
+    </nav>
+    <main class="max-w-xl mx-auto p-6 mt-8 bg-white rounded-2xl shadow-lg fade-in">
+        <div class="flex flex-col items-center">
+            <div class="text-6xl mb-4 bounce">🍲</div>
+            <h2 class="text-2xl font-bold mb-2 text-center text-green-700">What is ManjeAI?</h2>
+            <p class="text-gray-700 text-lg text-center mb-6">ManjeAI is a smart, mobile-first web app that helps people
+                in food-insecure regions like Haiti turn any available food—typed or photographed—into a nutritious,
+                fuel-saving recipe with local ingredient suggestions and easy-to-follow steps.</p>
+            <div class="w-full flex flex-col items-center">
+                <div
+                    class="w-24 h-24 rounded-full bg-gradient-to-tr from-green-300 to-yellow-200 flex items-center justify-center mb-4 animate-pulse">
+                    <span class="text-4xl">🧠</span>
+                </div>
+                <div class="text-center text-green-800 font-semibold mb-2">How it works:</div>
+                <ul class="text-gray-700 text-base space-y-2 mb-6">
+                    <li>• Enter or snap a photo of your ingredients</li>
+                    <li>• AI detects foods and creates a recipe</li>
+                    <li>• Steps are fuel-efficient and easy to follow</li>
+                    <li>• Nutrition is estimated and visualized</li>
+                    <li>• Missing nutrients? Get local, affordable add-ons</li>
+                    <li>• Save and reuse recipes anytime</li>
+                </ul>
+            </div>
+            <div class="mt-4 p-4 bg-green-50 border-l-4 border-green-400 rounded text-green-800 text-center">
+                Tackling <span class="font-bold">food insecurity</span> by making the most of what you have, with the
+                power of AI and local knowledge.
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
