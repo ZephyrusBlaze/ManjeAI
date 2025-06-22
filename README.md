@@ -63,7 +63,7 @@ ManjeAI/
 
 ## 🔑 API Keys
 - **Google Gemini**: [Get your API key](https://ai.google.dev/)
-- **LogMeal**: [Get your API key](https://logmeal.es/)
+- **LogMeal**: [Get your API key](https://logmeal.com/)
 
 ---
 
